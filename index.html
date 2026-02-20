@@ -6,12 +6,18 @@
     <title>Suregreen Physiotherapy and Wellness Clinic</title>
     <style> 
         * { font-family: Arial, sans-serif; }
-        body { margin:0; background:#f4f8f6; color:#333; }
+        body { margin:0; color:#333; }
         header { background:#2e8b57; color:#fff; padding:20px; display:flex; align-items:center; justify-content:center; gap:20px; }
         nav { display:flex; justify-content:center; background:#1f6f45; }
         nav a { color:#fff; padding:15px 20px; text-decoration:none; font-weight:bold; cursor:pointer; }
         nav a:hover { background:#145c38; }
         section { padding:40px; display:none; }
+        .hero {
+            background-image: url(IMAGES/Physiotherapy.jfif);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
         section.active { display:block; }
         h2 { color:#2e8b57; }
         .services { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:20px; }
@@ -43,14 +49,38 @@
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
 </nav>
-<section id="home" class="active">
+<section id="home" class="active hero">
     <p style="font-size:18px; max-width:900px; margin:auto;">
         Welcome to <strong>Suregreen Physiotherapy and Wellness Clinic</strong>, where your recovery, mobility, and overall well‑being are our top priorities. We provide professional, evidence‑based physiotherapy services tailored to help you relieve pain, restore movement, and achieve a healthier, more active life in a supportive and caring environment.
-    </p>
-    <br>
-    <br>
-    <img src="IMAGES/Physiotherapy.jfif" alt="Physiotherapy" style="text-align: center; width: 325px; max-width: 900px;">
+    </p> 
+
+    <div style="margin-top:40px;">
+        <h2>Why Choose Us</h2>
+        <div class="services">
+            <div class="card">
+                <img src="IMAGES/Medical Qualified Professionals.jfif" alt="Medical Qualified Professionals">
+                <h4>Medical Qualified Professionals</h4>
+                <p>Our clinic is staffed by licensed and experienced physiotherapists committed to high standards of care.</p>
+            </div>
+            <div class="card">
+                <img src="IMAGES/Patient-Centered Care.jfif" alt="Patient-Centered Care">
+                <h4>Patient-Centered Care</h4>
+                <p>Every treatment plan is tailored to meet individual patient needs and recovery goals.</p>
+            </div>
+            <div class="card">
+                <img src="IMAGES/Modern Medical Techniques.jfif" alt="Modern Medical Techniques">
+                <h4>Modern Medical Techniques</h4>
+                <p>We use evidence-based methods and modern equipment to ensure effective rehabilitation.</p>
+            </div>
+            <div class="card">
+                <img src="IMAGES/Comfortable Environment.jfif" alt="Comfortable Environment">
+                <h4>Comfortable Environment</h4>
+                <p>Our clinic provides a welcoming and supportive atmosphere for healing and wellness.</p>
+            </div>
+        </div>
+    </div> 
 </section>
+
 <section id="about">
     <h2>About Us</h2>
     <p>Suregreen Physiotherapy and Wellness Clinic is dedicated to evidence-based physiotherapy care. Our licensed physiotherapists focus on holistic rehabilitation, injury prevention, and overall wellness.</p>
@@ -144,7 +174,12 @@
     }
 </script>
 
+<footer style="background:#1f6f45; color:#fff; padding:30px 20px; text-align:center;">
+    <h3>Suregreen Physiotherapy and Wellness Clinic</h3>
+    <p>12 Wellness Avenue, Lagos, Nigeria</p>
+    <p>Phone: +234 806 772 6715 | Email: suregreenphysio@gmail.com</p>
+    <p style="margin-top:10px; font-size:14px;">&copy; Suregreen Physiotherapy and Wellness Clinic. All rights reserved.</p>
+</footer>
 
 </body>
-
 </html>
